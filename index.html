@@ -1,0 +1,289 @@
+<html>
+
+<head>
+<title>SOHO Summary Database</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of Scripts
+
+function GoBack() {
+    if (confirm("Are you sure you want to go to the previous page?")) {
+	history.go(-1);
+    }
+}
+
+var timerID = null;
+var timerRunning = false;
+var msPerDay = 24 * 60 * 60 * 1000 ;
+var LaunchTime = new Date();
+LaunchTime.setTime(Date.parse("2 Dec 1995 08:08:00 GMT"));
+
+function stopclock (){
+    if (timerRunning)
+	clearTimeout(timerID);
+    timerRunning = false;
+}
+
+function startclock () {
+    // Make sure the clock is stopped
+    stopclock();
+    showtime();
+}
+
+function showtime () {
+    var now = new Date();
+    var timePassed = now.getTime()-LaunchTime.getTime();
+
+    var fDaysPassed = timePassed / msPerDay;
+    var DaysPassed = Math.floor(fDaysPassed);
+
+    var fHoursPassed = (fDaysPassed - DaysPassed)*24;
+    var HoursPassed = Math.floor(fHoursPassed);
+
+    var fMinsPassed = (fHoursPassed - HoursPassed)*60
+    var MinsPassed = Math.floor(fMinsPassed);
+
+    var SecsPassed = Math.floor((fMinsPassed - MinsPassed)*60);
+
+    if (HoursPassed < 10) HoursPassed = "0" + HoursPassed;
+    if (MinsPassed < 10) MinsPassed = "0" + MinsPassed;
+    if (SecsPassed < 10) SecsPassed = "0" + SecsPassed;
+
+    ClockStr = DaysPassed + " days " + HoursPassed + " hours " + MinsPassed + " min " + SecsPassed + " secs";
+
+    document.clock.face.value = ClockStr;
+    // you could replace the above with this
+    // and have a clock on the status bar:
+    // window.status = ClockStr;
+    timerID = setTimeout("showtime()",1000);
+    timerRunning = true;
+}
+
+// end scripts -->
+
+</SCRIPT>
+</head>
+
+<body background="/synoptic/.images/sohologo_emb.gif" vlink=#0000FF 
+onload="startclock()" onunload="stopclock()">
+
+<script Language="JavaScript">
+<!--
+document.write ("<center>")
+document.write ("<form name='clock' onSubmit='0'>")
+document.write ("<b>SOHO Mission Time: <input type='text' name='face' size=31></b>")
+document.write ("</form>")
+document.write ("</center>")
+// -->
+</script>
+
+
+<h1><center><a href=http://sohowww.nascom.nasa.gov/><img align=middle src="/synoptic/.images/SOHO_thumbnail.gif" alt='SOHO Home' width=116 height=170 border=0></a>
+SOHO Summary Database</center></h1>
+
+Welcome to the <b><a href=http://sohowww.nascom.nasa.gov>SOHO</a></b>
+Sumary Database, part of the <b><a
+href=http://sohowww.nascom.nasa.gov/data/>SOHO Data Archive</a></b>. 
+
+<hr>
+<b><blink><font color=blue>Notice:</font></blink></b> 
+Use of SOHO images for public education efforts and non-commercial 
+purposes is <B><em>strongly encouraged</em></b> and requires no 
+expressed authorization. It is requested, however, that any such use 
+properly attributes the source of the images as:<br>
+<ul>
+<b>&quot;Courtesy of SOHO/&lt;instrument name&gt;&sup1;
+consortium. SOHO is a project of international
+cooperation between ESA and NASA.&quot;</b><br><br>
+&sup1;<small>where 
+&lt;instrument name&gt; is the instrument that provided the
+images.</SMALL>
+</ul>
+
+<hr>
+Maintained in this SOHO Summary Database are daily solar 
+images taken by different SOHO instruments. Notice that for the latest, 
+high resolution EIT images, please visit <b>
+<a href=http://umbra.nascom.nasa.gov/images/latest.html>Current solar 
+images</a></b> page of the 
+<b><a href=http://umbra.nascom.nasa.gov/sdac.html>Solar 
+Data Analysis Center</a></b>.  
+
+All solar images archived in the SOHO Summary Database can be queried
+through the online <a href="http:/cgi-bin/summary_query_form"><b>SOHO
+Summary Database Search Engine</b></a>. The most recent solar images
+for a given date can be viewed through the appropriate highlighted date
+below. <p>
+
+<center>
+<font size=1>(Click <a href=http:/cgi-bin/mk_summary_html>here</a>
+if your browser does not support TABLES)</font>
+</center>
+<center><table border=0>
+<tr nowrap>
+   <td>
+      <table border=1 cellpadding=2 width=200><td align=center>
+      <b><a href=/cgi-bin/summary_image/000104>January 4, 2000</a></b>
+      <img src=/synoptic/.images/new.gif alt=' (new!)'>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/000103>January 3, 2000</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/000102>January 2, 2000</a></b>
+      </td></table>
+   </td>
+</tr>
+<tr nowrap>
+   <td>
+      <table border=1 cellpadding=2 width=200><td align=center>
+      <b><a href=/cgi-bin/summary_image/000101>January 1, 2000</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991231>December 31, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991230>December 30, 1999</a></b>
+      </td></table>
+   </td>
+</tr>
+<tr nowrap>
+   <td>
+      <table border=1 cellpadding=2 width=200><td align=center>
+      <b><a href=/cgi-bin/summary_image/991229>December 29, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991228>December 28, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991227>December 27, 1999</a></b>
+      </td></table>
+   </td>
+</tr>
+<tr nowrap>
+   <td>
+      <table border=1 cellpadding=2 width=200><td align=center>
+      <b><a href=/cgi-bin/summary_image/991226>December 26, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991225>December 25, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991224>December 24, 1999</a></b>
+      </td></table>
+   </td>
+</tr>
+<tr nowrap>
+   <td>
+      <table border=1 cellpadding=2 width=200><td align=center>
+      <b><a href=/cgi-bin/summary_image/991223>December 23, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991222>December 22, 1999</a></b>
+      </td></table>
+   </td>
+   <td>
+      <table border=1 cellpadding=2 width=180><td align=center>
+      <b><a href=/cgi-bin/summary_image/991221>December 21, 1999</a></b>
+      </td></table>
+   </td>
+</tr>
+</table></center><p>
+<b><a href=/cgi-bin/mk_old_summary/991221>Solar images for earlier dates</a></b> are also available.<p>
+Other SOHO data:<p>
+<dl>
+<dd><img src=/synoptic/.images/white_ball.gif alt=''>
+The latest 48-hour solar wind data from the SOHO CELIAS 
+<b><a href=http://umtof.umd.edu/pm/>MTOF Proton Monitor</a></b>
+
+<dd><img src=/synoptic/.images/white_ball.gif alt=''>
+<strong>Key Parameters files</strong>:
+<ul>
+<li> <a href="/summary/celias/">CELIAS Key Parameters files</a>
+<li> <a href="/summary/costep/">COSTEP Key Parameters files</a>
+<li> <a href="/summary/erne/">ERNE Key Parameters files</a>
+</ul></dl> <p>
+
+<a href=/synoptic/soho_movie.html><img border=0 align=left hspace=10 
+src=/synoptic/.images/movie.gif></a>
+You can now go to the <b><a href=/synoptic/soho_movie.html>SOHO Movie Theater
+for Solar Activity</a></b> to get animated solar images for the last 30 
+days from selected sites and image types.<p>
+
+Our <b><a href=/synoptic/>SOHO Synoptic Database</a></b> contains daily 
+solar synoptic images from ground-based major observatories around the world 
+and from the Yohkoh SXT.
+
+<hr>
+<a href="mailto:george@esa.nascom.nasa.gov, zarro@smmdac.nascom.nasa.gov">
+<img align=middle src="/synoptic/.images/mailbutton.gif" alt='' border=0></a>
+Please direct your any comments or suggestions to the authors of this page.
+
+
+<center>
+<base href=http://sohowww.nascom.nasa.gov>
+
+<FORM METHOD="GET" ACTION="/cgi-bin/select_go">
+<hr>
+<b><INPUT TYPE=SUBMIT VALUE="Go To">
+  <SELECT NAME="goto" 
+onChange="window.open(this.options[this.selectedIndex].value, '_self')" SIZE=1>
+     <OPTION SELECTED VALUE="/cgi-bin/select_go">Other SOHO Web Pages
+     <OPTION VALUE="/">SOHO HOME
+     <OPTION VALUE="/whatsnew/">What's New
+     <OPTION VALUE="/roadmap.html">Contents
+     <OPTION VALUE="/search/">Search
+     <OPTION VALUE="/descriptions/mission/">The Mission
+     <OPTION VALUE="/instruments.html">Instruments
+     <OPTION VALUE="/soho-institutions.html">Institutions
+     <OPTION VALUE="http://sohodb.nascom.nasa.gov/synoptic/soho_movie.html">SOHO Movie Theater
+     <OPTION VALUE="/gallery/">Gallery
+     <OPTION VALUE="/explore/">Explore!
+     <OPTION VALUE="/operations/">Operations
+     <OPTION VALUE="http://sohodb.nascom.nasa.gov/cgi-bin/mk_plan_form/">Daily 
+Operations Schedule
+     <OPTION VALUE="http://sohodb.nascom.nasa.gov/cgi-bin/soho_campaign_search/">SOHO 
+Campaign Search Engine
+     <OPTION VALUE="http://sohodb.nascom.nasa.gov/cgi-bin/synop_query_form/">Synoptic Database Search Engine 
+     <OPTION VALUE="http://sohodb.nascom.nasa.gov/cgi-bin/summary_query_form/">Summary Database Search Engine
+ 
+     <OPTION VALUE="/data/latestimages.html">Latest Images
+     <OPTION VALUE="/data/">Data Archive
+     <OPTION VALUE="/software.html">Software
+     <OPTION VALUE="/publications/">Publications
+     <OPTION VALUE="/bibliography/">Bibliography Database
+     <OPTION VALUE="/meetings/">Meetings
+     <OPTION VALUE="/localinfo/">Local Info
+     <OPTION VALUE="/nasa.html">NASA
+     <OPTION VALUE="/esa.html">ESA
+     <OPTION VALUE="/spacesolarastro.html">Space, Solar Physics, & Astrophys
+     <OPTION VALUE="/getinvolved.html">Get Involved
+     <OPTION VALUE="/descriptions/contacts/">Contact Us
+ </SELECT></b>
+<hr><br></FORM>
+</center>
+</BODY>
+<ADDRESS>
+<br>
+<b> Report problems to: </b><br><p>
+<a href=mailto:dzarro@solar.stanford.edu>Dominic Zarro</a>, SM&A/GSFC <BR>
+<a href=mailto:george@esa.nascom.nasa.gov> George Dimitoglou</a>, SM&A/ESA <br>
+</ADDRESS></html>
